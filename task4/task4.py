@@ -1,9 +1,7 @@
-a = input('введите путь к файлу')
-nums = open(a, 'rb').read().decode('utf-8')
-print(b)
-
-# nums = [2,3,4]
-# nums = map(int, input())
+a = input('путь файла ')
+nums = []
+with open (a, "r") as b:
+    nums = [int(line) for line in b]
 sum = 0
 step = 0
 for num in nums:
@@ -18,5 +16,3 @@ for num in nums:
             num += 1
             step +=1
 print(step)
-
-
