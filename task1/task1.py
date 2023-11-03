@@ -1,4 +1,5 @@
-n, m = map(int, input().split())
+n = int(input())
+m = int (input())
 st = 1
 while True:
     print(st, end='')
